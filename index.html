@@ -11,7 +11,7 @@
 </head>
 <body>
     <header>
-        <input type="text" placeholder="Search.." >
+        <input type="text" placeholder="Search.." id="search" onkeyup="searchFilter()">
     </header>
     <main>
         <div class="gallery">
@@ -58,6 +58,7 @@
         window.addEventListener('load', function() {
           baguetteBox.run('.gallery');
         });
-    </script>​
+    </script>
+    <script src="js/app.js"></script>​
 </body>
 </html>
