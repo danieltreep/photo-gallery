@@ -8,11 +8,12 @@ function searchFilter() {
     // Checking if there is an input value
     console.log(input);
 
-    // Creates a variable for the photos
-    let photos = document.querySelectorAll("a");
+    // Creates a variable for the image
+    let image = document.querySelectorAll("a");
 
-    // Target the data-caption attribute and converts it to lower case
-    let caption = photos[0].getAttribute("data-caption");
+    // Target the data-caption attribute and converts it to lower case. 
+    // The caption variable only targets the caption I select between [].
+    let caption = image[0].getAttribute("data-caption");
     caption = caption.toLowerCase();
     
     // Checking if let caption targets data-caption attribute
@@ -21,9 +22,9 @@ function searchFilter() {
     for (let i = 0; i < caption.length; i++) {
         
         if (caption.includes(input)) {
-            photos[i].style.display = "block";
+            image[i].style.display = "block";
         } else {
-            photos[i].style.display = "none";
+            image[i].style.display = "none";
         }
     }
 }
