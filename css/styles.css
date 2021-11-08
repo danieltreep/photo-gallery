@@ -1,16 +1,35 @@
+body {
+    background-color: rgb(255, 252, 238);
+}
 input {
     display: grid;
-    margin: 1rem auto 2rem;
+    margin: 2rem auto 0;
     padding: .7rem;
-    width: 60vw;
+    width: 60%;
     max-width: 500px;
     justify-content: center;
+    border: 2px solid grey;
+    border-radius: 5px;
 }
 .gallery {
     max-width: 1024px;
     margin: 0 auto;
+    padding: 2rem;
     display: grid;
     grid-template-columns: repeat(auto-fill, 200px);
     grid-gap: 25px;
     justify-content: center;
 }
+.photo {
+    transition: transform .5s;
+    border: 1px solid white;
+}
+.photo:hover {
+    transform: scale(1.1);
+    transition: transform .5s ease-out;
+}
+figcaption {
+    padding: .8rem 0;
+    font-size: 1.2rem;
+}
+
