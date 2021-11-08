@@ -1,0 +1,16 @@
+input {
+    display: grid;
+    margin: 1rem auto 2rem;
+    padding: .7rem;
+    width: 60vw;
+    max-width: 500px;
+    justify-content: center;
+}
+.gallery {
+    max-width: 1024px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 200px);
+    grid-gap: 25px;
+    justify-content: center;
+}
